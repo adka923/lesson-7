@@ -1,0 +1,20 @@
+#nav-circle {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+.header{
+    display: flex;
+    justify-content:start;
+    padding-left: 200px;
+
+}

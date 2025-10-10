@@ -1,0 +1,49 @@
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  padding: 10px 100px;
+  align-items: center;
+}
+* {
+  margin: 0;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  align-items: center;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+a {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: green;
+}
+
+.buttonHover:hover {
+  background-color: gray;
+}
+
+.buttonHover {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: green;
+}
