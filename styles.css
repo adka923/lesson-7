@@ -1,41 +1,71 @@
-body {
-  height: 100vh;
-}
-.container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  animation: transfer 2s ease-in-out infinite alternate;
+  position: relative;
 }
 
-.shadowContainer {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 150px;
-  column-gap: 50px;
+@keyframes transfer {
+  from {
+    left: 0;
+  }
+  to {
+    left: 300px;
+  }
+}
+.fade {
+  animation: FadeIn 2s forwards infinite alternate;
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+@keyframes FadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-button {
-  padding: 25px 0px;
-  border: 0;
-  border-radius: 10px;
-  background-color: rgb(58, 205, 58);
-  color: white;
-  font-size: 25px;
+.pulse {
+  animation: pulseButton 2s infinite;
 }
-.button1{
-    box-shadow: 2px 10px 15px black;
+
+@keyframes pulseButton {
+  66% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-.button2{
-    box-shadow: 1px 15px 20px black;
+
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation: block 6s infinite alternate;
 }
-.button3{
-     box-shadow: 1px 10px 20px black inset;
-}
-.button4{
-    box-shadow: 0 4px 10px 2px green;
+
+@keyframes block {
+  0% {
+    background-color: orange;
+  }
+  20% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: cyan;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: pink;
+  }
 }
